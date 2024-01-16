@@ -1,3 +1,4 @@
+let squareCont = document.getElementById("containerSquare");
 let fizz = "fizz";
 let buzz = "buzz";
 let fizzbuzz = "fizzbuzz";
@@ -6,12 +7,12 @@ let fizzbuzz = "fizzbuzz";
 for (let i = 1; i <= 100; i++)
 {
     if (i % 15 === 0) {
-        console.log(fizzbuzz);
+       squareCont.innerHTML += `<div class="square multiple_15">${fizzbuzz}</div>` ;
     } else if (i % 5 === 0 ) {
-        console.log(fizz);
+        squareCont.innerHTML += `<div class="square multiple_5">${buzz}</div>` ;
     } else if ( i % 3 === 0) {
-        console.log(buzz);
+        squareCont.innerHTML += `<div class="square multiple_3">${fizz}</div>` ;
     } else {
-        console.log(i);
+        squareCont.innerHTML += `<div class="square">${i}</div>` ;
     }
 } 
